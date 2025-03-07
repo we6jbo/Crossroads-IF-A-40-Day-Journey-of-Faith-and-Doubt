@@ -18,7 +18,7 @@ Jerry stands in front of First Lutheran Church, debating whether to go in. What 
 
 [[Enter the church]]
 [[Walk away and call Sam]]</tw-passagedata><tw-passagedata pid="2" name="Enter the church" tags="" position="150,25" size="100,100">(set: $enteredChurch to true)
-(set: $faithScore += 1)
+(set: $faithScore to $faithScore + 1)
 
 Jerry steps inside, feeling the familiar scent of old wooden pews and candle wax. Pastor Greg Lawson is at the front, speaking with a woman.
 
@@ -26,7 +26,7 @@ What does Jerry do?
 
 [[Approach Pastor Lawson]]
 [[Sit in the back and observe]]</tw-passagedata><tw-passagedata pid="3" name="Walk away and call Sam" tags="" position="275,25" size="100,100">(set: $calledSam to true)
-(set: $doubtScore += 1)
+(set: $doubtScore to $doubtScore + 1)
 
 Jerry exhales and pulls out his phone. He dials Sam&#39;s number.
 
@@ -37,7 +37,7 @@ Jerry exhales and pulls out his phone. He dials Sam&#39;s number.
 Jerry takes a deep breath. What does he ask?
 
 [[Ask about faith and doubt]]
-[[Talk about personal struggles]]</tw-passagedata><tw-passagedata pid="5" name="Sit in the back and observe" tags="" position="525,25" size="100,100">(set: $faithScore += 1)
+[[Talk about personal struggles]]</tw-passagedata><tw-passagedata pid="5" name="Sit in the back and observe" tags="" position="525,25" size="100,100">(set: $faithScore to $faithScore + 1)
 
 Jerry finds a seat near the back. He listens to Pastor Lawson’s conversation, catching pieces about faith, forgiveness, and purpose.
 
@@ -47,32 +47,32 @@ Jerry finds a seat near the back. He listens to Pastor Lawson’s conversation, 
 Jerry hesitates, then speaks:
 
 [[Ask Sam if he still believes in God]]
-[[Talk about life instead]]</tw-passagedata><tw-passagedata pid="7" name="Hang up and keep walking" tags="" position="775,25" size="100,100">(set: $doubtScore += 1)
+[[Talk about life instead]]</tw-passagedata><tw-passagedata pid="7" name="Hang up and keep walking" tags="" position="775,25" size="100,100">(set: $doubtScore to $doubtScore + 1)
 
 Jerry shoves his phone in his pocket and keeps walking. His mind spins with questions.
 
 [[Visit the library to research religion]]
-[[Head home and reflect]]</tw-passagedata><tw-passagedata pid="8" name="Ask about faith and doubt" tags="" position="900,25" size="100,100">(set: $faithScore += 1)
+[[Head home and reflect]]</tw-passagedata><tw-passagedata pid="8" name="Ask about faith and doubt" tags="" position="900,25" size="100,100">(set: $faithScore to $faithScore + 1)
 
 Pastor Lawson nods. &quot;Faith isn&#39;t about having all the answers. It&#39;s about trust. What’s on your mind?&quot;
 
 [[Admit you&#39;re struggling to believe]]
-[[Say you want to understand faith logically]]</tw-passagedata><tw-passagedata pid="9" name="Talk about personal struggles" tags="" position="1025,25" size="100,100">(set: $faithScore += 1)
+[[Say you want to understand faith logically]]</tw-passagedata><tw-passagedata pid="9" name="Talk about personal struggles" tags="" position="1025,25" size="100,100">(set: $faithScore to $faithScore + 1)
 
 Pastor Lawson listens. &quot;Life tests all of us, Jerry. Faith can be a source of strength.&quot;
 
 [[Ask if faith is necessary to live a good life]]
-[[Say you don’t think you need faith]]</tw-passagedata><tw-passagedata pid="10" name="Ask Sam if he still believes in God" tags="" position="1150,25" size="100,100">(set: $doubtScore += 1)
+[[Say you don’t think you need faith]]</tw-passagedata><tw-passagedata pid="10" name="Ask Sam if he still believes in God" tags="" position="1150,25" size="100,100">(set: $doubtScore to $doubtScore + 1)
 
 Sam exhales. &quot;Honestly, I don’t know anymore. I used to believe, but now… I question everything.&quot;
 
 [[Agree with Sam and express doubts]]
-[[Defend faith, even if you&#39;re unsure]]</tw-passagedata><tw-passagedata pid="11" name="Talk about life instead" tags="" position="25,150" size="100,100">(set: $doubtScore += 1)
+[[Defend faith, even if you&#39;re unsure]]</tw-passagedata><tw-passagedata pid="11" name="Talk about life instead" tags="" position="25,150" size="100,100">(set: $doubtScore to $doubtScore + 1)
 
 Jerry changes the subject, talking about work and daily struggles.
 
 [[Sam brings up faith anyway]]
-[[End the call on a light note]]</tw-passagedata><tw-passagedata pid="12" name="Visit the library to research religion" tags="" position="150,150" size="100,100">(set: $doubtScore += 1)
+[[End the call on a light note]]</tw-passagedata><tw-passagedata pid="12" name="Visit the library to research religion" tags="" position="150,150" size="100,100">(set: $doubtScore to $doubtScore + 1)
 
 Jerry spends hours reading about the history of faith, its role in government, and how societies evolve beyond it.
 
