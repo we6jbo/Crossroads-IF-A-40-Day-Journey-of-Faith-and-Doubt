@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://j03.page/sitemap.xml
