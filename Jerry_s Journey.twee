@@ -1,0 +1,142 @@
+:: StoryTitle
+Jerry’s Journey
+
+
+:: StoryData
+{
+  "ifid": "42BCA6BA-9E6F-4477-B3B5-4D74A54D1D0C",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Introduction",
+  "zoom": 1
+}
+
+:: Introduction
+(set: $enteredChurch to false)
+(set: $calledSam to false)
+(set: $faithScore to 0)  
+(set: $doubtScore to 0)
+
+Jerry stands in front of First Lutheran Church, debating whether to go in. What does he do?
+
+[[Enter the church]]
+[[Walk away and call Sam]]
+
+:: Enter the church
+(set: $enteredChurch to true)
+(set: $faithScore += 1)
+
+Jerry steps inside, feeling the familiar scent of old wooden pews and candle wax. Pastor Greg Lawson is at the front, speaking with a woman.
+
+What does Jerry do?
+
+[[Approach Pastor Lawson]]
+[[Sit in the back and observe]]
+
+:: Walk away and call Sam
+(set: $calledSam to true)
+(set: $doubtScore += 1)
+
+Jerry exhales and pulls out his phone. He dials Sam's number.
+
+[[Wait for Sam to pick up]]
+[[Hang up and keep walking]]
+
+:: Approach Pastor Lawson
+(if: $enteredChurch is true)[Pastor Lawson smiles. "Good to see you again, Jerry."]
+(else:)[Pastor Lawson looks at Jerry curiously. "First time here?"]
+
+Jerry takes a deep breath. What does he ask?
+
+[[Ask about faith and doubt]]
+[[Talk about personal struggles]]
+
+:: Sit in the back and observe
+(set: $faithScore += 1)
+
+Jerry finds a seat near the back. He listens to Pastor Lawson’s conversation, catching pieces about faith, forgiveness, and purpose.
+
+[[Decide to talk to Pastor Lawson after all]]
+[[Leave quietly]]
+
+:: Wait for Sam to pick up
+Sam answers. "Jerry? What’s up?"
+
+Jerry hesitates, then speaks:
+
+[[Ask Sam if he still believes in God]]
+[[Talk about life instead]]
+
+:: Hang up and keep walking
+(set: $doubtScore += 1)
+
+Jerry shoves his phone in his pocket and keeps walking. His mind spins with questions.
+
+[[Visit the library to research religion]]
+[[Head home and reflect]]
+
+:: Ask about faith and doubt
+(set: $faithScore += 1)
+
+Pastor Lawson nods. "Faith isn't about having all the answers. It's about trust. What’s on your mind?"
+
+[[Admit you're struggling to believe]]
+[[Say you want to understand faith logically]]
+
+:: Talk about personal struggles
+(set: $faithScore += 1)
+
+Pastor Lawson listens. "Life tests all of us, Jerry. Faith can be a source of strength."
+
+[[Ask if faith is necessary to live a good life]]
+[[Say you don’t think you need faith]]
+
+:: Ask Sam if he still believes in God
+(set: $doubtScore += 1)
+
+Sam exhales. "Honestly, I don’t know anymore. I used to believe, but now… I question everything."
+
+[[Agree with Sam and express doubts]]
+[[Defend faith, even if you're unsure]]
+
+:: Talk about life instead
+(set: $doubtScore += 1)
+
+Jerry changes the subject, talking about work and daily struggles.
+
+[[Sam brings up faith anyway]]
+[[End the call on a light note]]
+
+:: Visit the library to research religion
+(set: $doubtScore += 1)
+
+Jerry spends hours reading about the history of faith, its role in government, and how societies evolve beyond it.
+
+[[Realize faith is just a social tool]]
+[[Still feel like something is missing]]
+
+:: Head home and reflect
+Jerry sits alone, lost in thought. What does he focus on?
+
+[[Think about personal experiences with faith]]
+[[Analyze religion from a historical perspective]]
+
+:: Ending - Faith Strengthened
+(if: $faithScore > $doubtScore)[Jerry finds peace in his faith, embracing it as a guiding force in his life.]
+
+:: Ending - Doubt Prevails
+(if: $doubtScore > $faithScore)[Jerry realizes he no longer believes, embracing a life guided by reason and personal values.]
+
+:: Ending - Unresolved
+(if: $faithScore is $doubtScore)[Jerry still has questions. Faith and doubt will always be a part of his journey.]
+
+:: Share Your Journey
+<a href="https://twitter.com/intent/tweet?text=I%20just%20played%20Crossroads-IF!%20What%20will%20you%20choose?%20Play%20here:%20https://j03.page/crossroads-if/" target="_blank">Share on Twitter</a>
+
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://j03.page/crossroads-if/" target="_blank">Share on Facebook</a>
+
+<a href="https://www.reddit.com/submit?url=https://j03.page/crossroads-if/&title=Check%20out%20Crossroads-IF!" target="_blank">Share on Reddit</a>
+
+<button onclick="navigator.clipboard.writeText('https://j03.page/crossroads-if/'); alert('Game link copied! Share it anywhere!');">Copy Game Link</button>
+
+
