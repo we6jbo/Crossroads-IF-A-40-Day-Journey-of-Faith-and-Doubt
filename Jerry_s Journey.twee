@@ -17,13 +17,12 @@ Crossroads-IF
 
 Jerry thinks about his struggles.
 
-Click the link to open part 2.
+Click Continue to open part 2.
 
-(click: "Continue")[
+(link: "Continue")[
 (set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
 (open-url: $externalURL)
 ]
-
 
 
 :: Agree with Sam and express doubts {"position":"1450,350","size":"100,100"}
@@ -31,13 +30,12 @@ Click the link to open part 2.
 
 Time passes.
 
-Click the link to open part 2.
+Click Continue to open part 2.
 
-(click: "Continue")[
+(link: "Continue")[
 (set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
 (open-url: $externalURL)
 ]
-
 
 
 :: Analyze religion from a historical perspective {"position":"1025,700","size":"100,100"}
@@ -45,13 +43,12 @@ Click the link to open part 2.
 
 Jerry thinks logically.
 
-Click the link to open part 2.
+Click Continue to open part 2.
 
-(click: "Continue")[
+(link: "Continue")[
 (set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
 (open-url: $externalURL)
 ]
-
 
 
 :: Approach Pastor Lawson {"position":"275,450","size":"100,100"}
@@ -87,9 +84,9 @@ Pastor Lawson nods. "Faith isn't about having all the answers. It's about trust.
 
 Jerry thinks hard about faith.
 
-Click the link to open part 2.
+Click Continue to open part 2.
 
-(click: "Continue")[
+(link: "Continue")[
 (set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
 (open-url: $externalURL)
 ]
@@ -101,13 +98,12 @@ Click the link to open part 2.
 
 Time passes.
 
-Click the link to open part 2.
+Click Continue to open part 2.
 
-(click: "Continue")[
+(link: "Continue")[
 (set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
 (open-url: $externalURL)
 ]
-
 
 
 :: End the call on a light note {"position":"1325,350","size":"100,100"}
@@ -115,13 +111,12 @@ Click the link to open part 2.
 
 Time passes and then Jerry heads home.
 
-Click the link to open part 2.
+Click Continue to open part 2.
 
-(click: "Continue")[
+(link: "Continue")[
 (set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
 (open-url: $externalURL)
 ]
-
 
 
 :: Ending {"position":"900,400","size":"100,100"}
@@ -177,13 +172,12 @@ Jerry stands in front of First Lutheran Church, debating whether to go in. What 
 
 Jerry thinks hard.
 
-Click the link to open part 2.
+Click Continue to open part 2.
 
-(click: "Continue")[
+(link: "Continue")[
 (set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
 (open-url: $externalURL)
 ]
-
 
 
 :: Sam brings up faith anyway {"position":"1200,350","size":"100,100"}
@@ -191,13 +185,12 @@ Click the link to open part 2.
 
 Jerry listens and then says thank you.
 
-Click the link to open part 2.
+Click Continue to open part 2.
 
-(click: "Continue")[
+(link: "Continue")[
 (set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
 (open-url: $externalURL)
 ]
-
 
 
 :: Say you don’t think you need faith {"position":"75,775","size":"100,100"}
@@ -205,9 +198,9 @@ Click the link to open part 2.
 
 Jerry reflects on what Pastor Lawson says.
 
-Click the link to open part 2.
+Click Continue to open part 2.
 
-(click: "Continue")[
+(link: "Continue")[
 (set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
 (open-url: $externalURL)
 ]
@@ -219,13 +212,12 @@ Click the link to open part 2.
 
 Jerry is curious.
 
-Click the link to open part 2.
+Click Continue to open part 2.
 
-(click: "Continue")[
+(link: "Continue")[
 (set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
 (open-url: $externalURL)
 ]
-
 
 
 :: Share Your Journey {"position":"925,550","size":"100,100"}
@@ -257,13 +249,12 @@ Jerry finds a seat near the back. He listens to Pastor Lawson’s conversation, 
 
 Jerry feels lost.
 
-Click the link to open part 2.
+Click Continue to open part 2.
 
-(click: "Continue")[
+(link: "Continue")[
 (set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
 (open-url: $externalURL)
 ]
-
 
 
 :: Talk about life instead {"position":"1200,225","size":"100,100"}
@@ -285,13 +276,14 @@ Pastor Lawson listens. "Life tests all of us, Jerry. Faith can be a source of st
 :: Think about personal experiences with faith {"position":"750,900","size":"100,100"}
 (set: $faithScore to $faithScore + 1)
 
-(script: "
-   let faithScore = " + $faithScore + ";
-   let doubtScore = " + $doubtScore + ";
-   let url = 'https://f3ki.j03.page/index2.html?faithScore=' + faithScore + '&doubtScore=' + doubtScore;
-   window.open(url, '_blank');
-")
+Jerry thinks about it some more.
 
+Click Continue to open part 2.
+
+(link: "Continue")[
+(set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
+(open-url: $externalURL)
+]
 
 
 :: Visit the library to research religion {"position":"625,650","size":"100,100"}
