@@ -104,7 +104,26 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Crossroads-IF-Part2" startnode="1" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="8E81D369-91CC-4FA0-8F56-8646DCCB2905" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">// Set global variable jerryjschk to 51806
+	<tw-storydata name="Crossroads-IF-Part2" startnode="1" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="8E81D369-91CC-4FA0-8F56-8646DCCB2905" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">// Function to get URL parameters
+window.getQueryParam = function (param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+};
+
+// Initialize faithScore and doubtScore in SugarCube when the game starts
+$(document).on(':passagerender', function() {
+    if (typeof setup !== "undefined") {
+        if (setup.faithScore === undefined) {
+            setup.faithScore = Number(getQueryParam('faithScore')) || 0;
+        }
+        if (setup.doubtScore === undefined) {
+            setup.doubtScore = Number(getQueryParam('doubtScore')) || 0;
+        }
+    }
+});
+
+
+// Set global variable jerryjschk to 51806
 window.jerryjschk = 51806;
 
 // Function to set a cookie
