@@ -26,6 +26,25 @@ Your current scores:
 
 
 :: StoryScript [script]
+// Function to get URL parameters
+window.getQueryParam = function (param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+};
+
+// Initialize faithScore and doubtScore in SugarCube when the game starts
+$(document).on(':passagerender', function() {
+    if (typeof setup !== "undefined") {
+        if (setup.faithScore === undefined) {
+            setup.faithScore = Number(getQueryParam('faithScore')) || 0;
+        }
+        if (setup.doubtScore === undefined) {
+            setup.doubtScore = Number(getQueryParam('doubtScore')) || 0;
+        }
+    }
+});
+
+
 // Set global variable jerryjschk to 51806
 window.jerryjschk = 51806;
 
