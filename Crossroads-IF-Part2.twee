@@ -5,19 +5,24 @@ Crossroads-IF-Part2
 :: StoryData
 {
   "ifid": "8E81D369-91CC-4FA0-8F56-8646DCCB2905",
-  "format": "Harlowe",
-  "format-version": "3.3.9",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
   "start": "Untitled Passage",
   "zoom": 1
 }
 
 
+:: Continue {"position":"900,525","size":"100,100"}
+
+
+
 :: Untitled Passage {"position":"900,400","size":"100,100"}
-Welcome back.
+Your current scores:
 
-I'll upload part 2 on Mar 15.
+- **Faith Score:** <<print setup.faithScore>>
+- **Doubt Score:** <<print setup.doubtScore>>
 
-Jeremiah ONeal
+[[Continue]]
 
 
 :: StoryScript [script]
