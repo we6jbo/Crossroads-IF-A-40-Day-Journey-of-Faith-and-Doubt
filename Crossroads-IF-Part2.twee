@@ -1,0 +1,64 @@
+:: StoryTitle
+Crossroads-IF-Part2
+
+
+:: StoryData
+{
+  "ifid": "8E81D369-91CC-4FA0-8F56-8646DCCB2905",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Untitled Passage",
+  "zoom": 1
+}
+
+
+:: Untitled Passage {"position":"900,400","size":"100,100"}
+Welcome back.
+
+I'll upload part 2 on Mar 15.
+
+Jeremiah ONeal
+
+
+:: StoryScript [script]
+// Set global variable jerryjschk to 51806
+window.jerryjschk = 51806;
+
+// Function to set a cookie
+function setCookie(name, value, days) {
+    let expires = "";
+    if (days) {
+        let date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + value + "; path=/" + expires;
+}
+
+// Set the cookie 'cookjo' to 51807 (valid for 30 days)
+setCookie("cookjo", 51807, 30);
+
+// Debugging: Check if values are set
+console.log("jerryjschk is set to:", window.jerryjschk);
+console.log("Cookie 'cookjo' has been set to:", document.cookie);
+
+// Inject metadata into document head
+document.head.innerHTML += `
+    <title>Crossroads-IF: An Interactive Fiction Experience</title>
+    <meta name="description" content="Crossroads-IF is an interactive fiction game where your choices shape faith, doubt, and self-discovery.">
+    <meta name="keywords" content="interactive fiction, Twine, faith, doubt, choice-based game, text adventure">
+
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:title" content="Crossroads-IF: A Journey of Choice">
+    <meta property="og:description" content="An immersive interactive fiction experience. Walk the path of faith or doubt in this choice-driven journey.">
+    <meta property="og:image" content="https://j03page.wordpress.com/wp-content/uploads/2025/03/dallc2b7e-2025-03-07-01.56.59-a-visually-striking-promotional-image-for-crossroads-if_-an-interactive-journey.-the-image-features-a-lone-traveler-standing-at-a-crossroads-at-dusk.webp">
+    <meta property="og:image:alt" content="Interactive fiction cover: A lone traveler at a crossroads at dusk, representing deep choices and self-discovery.">
+    <meta property="og:url" content="https://f3ki.j03.page/">
+
+    <!-- Twitter Card with Custom Type -->
+    <meta name="twitter:card" content="interactive_fiction_card">
+    <meta name="twitter:title" content="Crossroads-IF: Interactive Fiction at a Crossroads">
+    <meta name="twitter:description" content="Make choices, shape your story, and walk the path of faith or doubt in this text-based adventure.">
+    <meta name="twitter:image" content="https://j03page.wordpress.com/wp-content/uploads/2025/03/dallc2b7e-2025-03-07-01.56.59-a-visually-striking-promotional-image-for-crossroads-if_-an-interactive-journey.-the-image-features-a-lone-traveler-standing-at-a-crossroads-at-dusk.webp">
+    <meta name="twitter:image:alt" content="Interactive fiction scene: A lone traveler facing a decision at dusk, symbolizing faith, doubt, and discovery.">
+`;
