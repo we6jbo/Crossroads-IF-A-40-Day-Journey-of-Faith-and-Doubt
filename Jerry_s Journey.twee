@@ -15,36 +15,42 @@ Crossroads-IF
 :: Admit you're struggling to believe {"position":"350,725","size":"100,100"}
 (set: $doubtScore to $doubtScore + 1)
 
-(script: "
-   let faithScore = " + $faithScore + ";
-   let doubtScore = " + $doubtScore + ";
-   let url = 'https://f3ki.j03.page/index2.html?faithScore=' + faithScore + '&doubtScore=' + doubtScore;
-   window.open(url, '_blank');
-")
+Jerry thinks about his struggles.
+
+Click the link to open part 2.
+
+(click: "Continue")[
+(set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
+(open-url: $externalURL)
+]
 
 
 
 :: Agree with Sam and express doubts {"position":"1450,350","size":"100,100"}
 (set: $doubtScore to $doubtScore + 1)
 
-(script: "
-   let faithScore = " + $faithScore + ";
-   let doubtScore = " + $doubtScore + ";
-   let url = 'https://f3ki.j03.page/index2.html?faithScore=' + faithScore + '&doubtScore=' + doubtScore;
-   window.open(url, '_blank');
-")
+Time passes.
+
+Click the link to open part 2.
+
+(click: "Continue")[
+(set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
+(open-url: $externalURL)
+]
 
 
 
 :: Analyze religion from a historical perspective {"position":"1025,700","size":"100,100"}
 (set: $doubtScore to $doubtScore + 1)
 
-(script: "
-   let faithScore = " + $faithScore + ";
-   let doubtScore = " + $doubtScore + ";
-   let url = 'https://f3ki.j03.page/index2.html?faithScore=' + faithScore + '&doubtScore=' + doubtScore;
-   window.open(url, '_blank');
-")
+Jerry thinks logically.
+
+Click the link to open part 2.
+
+(click: "Continue")[
+(set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
+(open-url: $externalURL)
+]
 
 
 
@@ -79,36 +85,42 @@ Pastor Lawson nods. "Faith isn't about having all the answers. It's about trust.
 :: Ask if faith is necessary to live a good life {"position":"200,775","size":"100,100"}
 (set: $faithScore to $faithScore + 1)
 
-(script: "
-   let faithScore = " + $faithScore + ";
-   let doubtScore = " + $doubtScore + ";
-   let url = 'https://f3ki.j03.page/index2.html?faithScore=' + faithScore + '&doubtScore=' + doubtScore;
-   window.open(url, '_blank');
-")
+Jerry thinks hard about faith.
+
+Click the link to open part 2.
+
+(click: "Continue")[
+(set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
+(open-url: $externalURL)
+]
 
 
 
 :: Defend faith, even if you're unsure {"position":"1575,350","size":"100,100"}
 (set: $faithScore to $faithScore + 1)
 
-(script: "
-   let faithScore = " + $faithScore + ";
-   let doubtScore = " + $doubtScore + ";
-   let url = 'https://f3ki.j03.page/index2.html?faithScore=' + faithScore + '&doubtScore=' + doubtScore;
-   window.open(url, '_blank');
-")
+Time passes.
+
+Click the link to open part 2.
+
+(click: "Continue")[
+(set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
+(open-url: $externalURL)
+]
 
 
 
 :: End the call on a light note {"position":"1325,350","size":"100,100"}
 (set: $doubtScore to $doubtScore + 1)
 
-(script: "
-   let faithScore = " + $faithScore + ";
-   let doubtScore = " + $doubtScore + ";
-   let url = 'https://f3ki.j03.page/index2.html?faithScore=' + faithScore + '&doubtScore=' + doubtScore;
-   window.open(url, '_blank');
-")
+Time passes and then Jerry heads home.
+
+Click the link to open part 2.
+
+(click: "Continue")[
+(set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
+(open-url: $externalURL)
+]
 
 
 
@@ -163,48 +175,56 @@ Jerry stands in front of First Lutheran Church, debating whether to go in. What 
 :: Realize faith is just a social tool {"position":"625,775","size":"100,100"}
 (set: $doubtScore to $doubtScore + 1)
 
-(script: "
-   let faithScore = " + $faithScore + ";
-   let doubtScore = " + $doubtScore + ";
-   let url = 'https://f3ki.j03.page/index2.html?faithScore=' + faithScore + '&doubtScore=' + doubtScore;
-   window.open(url, '_blank');
-")
+Jerry thinks hard.
+
+Click the link to open part 2.
+
+(click: "Continue")[
+(set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
+(open-url: $externalURL)
+]
 
 
 
 :: Sam brings up faith anyway {"position":"1200,350","size":"100,100"}
 (set: $doubtScore to $doubtScore + 1)
 
-(script: "
-   let faithScore = " + $faithScore + ";
-   let doubtScore = " + $doubtScore + ";
-   let url = 'https://f3ki.j03.page/index2.html?faithScore=' + faithScore + '&doubtScore=' + doubtScore;
-   window.open(url, '_blank');
-")
+Jerry listens and then says thank you.
+
+Click the link to open part 2.
+
+(click: "Continue")[
+(set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
+(open-url: $externalURL)
+]
 
 
 
 :: Say you don’t think you need faith {"position":"75,775","size":"100,100"}
 (set: $doubtScore to $doubtScore + 1)
 
-(script: "
-   let faithScore = " + $faithScore + ";
-   let doubtScore = " + $doubtScore + ";
-   let url = 'https://f3ki.j03.page/index2.html?faithScore=' + faithScore + '&doubtScore=' + doubtScore;
-   window.open(url, '_blank');
-")
+Jerry reflects on what Pastor Lawson says.
+
+Click the link to open part 2.
+
+(click: "Continue")[
+(set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
+(open-url: $externalURL)
+]
 
 
 
 :: Say you want to understand faith logically {"position":"475,725","size":"100,100"}
 (set: $doubtScore to $doubtScore + 1)
 
-(script: "
-   let faithScore = " + $faithScore + ";
-   let doubtScore = " + $doubtScore + ";
-   let url = 'https://f3ki.j03.page/index2.html?faithScore=' + faithScore + '&doubtScore=' + doubtScore;
-   window.open(url, '_blank');
-")
+Jerry is curious.
+
+Click the link to open part 2.
+
+(click: "Continue")[
+(set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
+(open-url: $externalURL)
+]
 
 
 
@@ -235,12 +255,14 @@ Jerry finds a seat near the back. He listens to Pastor Lawson’s conversation, 
 :: Still feel like something is missing {"position":"725,775","size":"100,100"}
 (set: $faithScore to $faithScore + 1)
 
-(script: "
-   let faithScore = " + $faithScore + ";
-   let doubtScore = " + $doubtScore + ";
-   let url = 'https://f3ki.j03.page/index2.html?faithScore=' + faithScore + '&doubtScore=' + doubtScore;
-   window.open(url, '_blank');
-")
+Jerry feels lost.
+
+Click the link to open part 2.
+
+(click: "Continue")[
+(set: $externalURL to "https://f3ki.j03.page/index2.html?faithScore=" + (str: $faithScore) + "&doubtScore=" + (str: $doubtScore))
+(open-url: $externalURL)
+]
 
 
 
